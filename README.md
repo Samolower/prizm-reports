@@ -1,3 +1,4 @@
+<img width="320" height="320" alt="prizm-logo" src="https://github.com/user-attachments/assets/0677e265-c94f-4dea-8142-f9ac5bc5ab3e" />
 # Prizm — rapports publiés
 
 > *« Faire passer les projets crypto au prizm »*
