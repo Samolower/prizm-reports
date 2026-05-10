@@ -1,0 +1,18 @@
+{
+  "reports": [
+    {
+      "slug": "megaeth",
+      "name": "MegaETH",
+      "ticker": "MEGA",
+      "category": "L1/L2",
+      "status": "Mainnet < 6m",
+      "score": 66,
+      "tier": "ACCEPTABLE",
+      "confidence": 5,
+      "date": "2026-05-10",
+      "html_url": "/2026/05/2026-05-10_megaeth_analysis.html",
+      "pdf_url": "/2026/05/2026-05-10_megaeth_analysis.pdf"
+    }
+  ],
+  "updated_at": "2026-05-10T18:38:24Z"
+}

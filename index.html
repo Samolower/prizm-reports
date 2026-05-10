@@ -6,35 +6,89 @@
   <meta name="description" content="Rapports d'analyse de projets crypto édités par Crypto FR via Prizm.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    :root {
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #888;
+      --accent: #d4af37;
+      --border: #e5e5e5;
+    }
+    * { box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 720px;
-      margin: 4rem auto;
+      max-width: 760px;
+      margin: 3rem auto;
       padding: 0 1.5rem;
-      color: #1a1a1a;
-      background: #fafafa;
-      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
     }
-    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-    .baseline { color: #888; font-style: italic; margin-top: 0; }
+    h1 { font-size: 2rem; margin-bottom: 0.25rem; letter-spacing: -0.01em; }
+    .baseline { color: var(--muted); font-style: italic; margin-top: 0; }
+    .baseline a { color: var(--accent); text-decoration: none; }
+    .baseline a:hover { text-decoration: underline; }
+    .reports { list-style: none; padding: 0; margin: 2.5rem 0 1rem; }
+    .report {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .report:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .row-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .name { font-weight: 600; font-size: 1.1rem; }
+    .ticker { color: var(--muted); font-weight: 400; font-size: 0.95rem; }
+    .score { font-weight: 600; font-size: 0.95rem; white-space: nowrap; }
+    .row-meta { color: var(--muted); font-size: 0.9rem; margin-top: 0.35rem; }
+    .row-links { margin-top: 0.65rem; font-size: 0.95rem; }
+    .row-links a {
+      display: inline-block;
+      margin-right: 0.75rem;
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .row-links a:hover { border-color: var(--accent); background: #fff8e1; }
     .empty {
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       padding: 2rem;
-      background: white;
-      border: 1px dashed #ccc;
+      background: var(--card);
+      border: 1px dashed var(--border);
       border-radius: 8px;
       text-align: center;
-      color: #666;
+      color: var(--muted);
     }
-    a { color: #d4af37; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
   </style>
 </head>
 <body>
   <h1>🔷 Prizm — rapports publiés</h1>
   <p class="baseline">« Faire passer les projets crypto au prizm » — édité par <strong>Crypto FR</strong>.</p>
-  <div class="empty">
-    Aucun rapport publié pour le moment.<br>
-    Les analyses apparaîtront ici dès qu'un rapport est poussé via <code>scripts/publish_report.py</code>.
-  </div>
+  <ul class="reports"><li class="report"><div class="row-top"><span class="name">MegaETH <span class="ticker">(MEGA)</span></span><span class="score" style="color:#c9a227;">66/100 🟡 ACCEPTABLE</span></div><div class="row-meta">L1/L2 · Mainnet < 6m · <time>2026-05-10</time></div><div class="row-links"><a href="/2026/05/2026-05-10_megaeth_analysis.html">📄 HTML</a> <a href="/2026/05/2026-05-10_megaeth_analysis.pdf">📕 PDF</a></div></li></ul>
+  <footer>
+    1 rapport publié ·
+    Mis à jour 2026-05-10T18:38:24Z ·
+    <a href="https://github.com/Samolower/prizm-reports">Source</a>
+  </footer>
 </body>
 </html>
